@@ -128,42 +128,53 @@
         
         <!-- LEFT: Mobile Mockup -->
         <section class="lg:col-span-5 flex flex-col items-center">
-            <div class="w-full max-w-[390px] bg-black p-3.5 rounded-[50px] shadow-2xl ring-8 ring-slate-800 border-2 border-slate-700 relative overflow-hidden aspect-[9/19.5]">
-                <div class="absolute top-5 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-full z-50 flex items-center justify-center">
-                    <div class="w-3 h-3 rounded-full bg-slate-900 absolute right-4"></div>
+           
+         <!-- LEFT: MathSphere App -->
+<section class="lg:col-span-5 flex flex-col">
+
+    <div id="phone-screen"
+         class="w-full max-w-[430px] mx-auto bg-slate-50 rounded-3xl overflow-hidden shadow-xl flex flex-col text-slate-800">
+
+        <!-- APP HEADER -->
+        <div id="app-header-block"
+             class="bg-brand-blue text-white px-5 pt-6 pb-6 relative overflow-hidden shadow-md">
+
+            <!-- Background Formula -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none text-xs font-mono select-none">
+                <span class="absolute top-2 left-4">a²+b²=c²</span>
+                <span class="absolute top-10 right-4">f(x)=x²</span>
+                <span class="absolute bottom-2 left-6">sinA=a/c</span>
+                <span class="absolute bottom-5 right-6">x=(-b±√Δ)/2a</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center mt-2">
+
+                <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center border border-white/20 mb-2 relative shadow-lg">
+                    <span class="text-3xl font-black text-brand-gold font-serif">M</span>
+                    <div class="absolute inset-0 border-2 border-dashed border-brand-gold rounded-full animate-[spin_10s_linear_infinite]"></div>
                 </div>
 
-                <div id="phone-screen" class="w-full h-full bg-slate-50 rounded-[38px] overflow-hidden flex flex-col relative text-slate-800 select-none">
-                    <!-- Status Bar -->
-                    <div class="h-10 bg-brand-blue text-white px-6 pt-3 flex justify-between items-center text-xs font-semibold z-40">
-                        <span>9:41</span>
-                        <div class="flex items-center gap-1.5">
-                            <i class="fa-solid fa-signal"></i>
-                            <i class="fa-solid fa-wifi"></i>
-                            <i class="fa-solid fa-battery-three-quarters"></i>
-                        </div>
-                    </div>
+                <h2 class="text-2xl font-black font-serif">
+                    MathSphere
+                </h2>
 
-                    <!-- App Header -->
-                    <div id="app-header-block" class="bg-brand-blue text-white px-5 pt-4 pb-6 relative overflow-hidden flex-shrink-0 z-30 shadow-md">
-                        <div class="absolute inset-0 opacity-10 pointer-events-none text-xs font-mono select-none">
-                            <span class="absolute top-2 left-4">a² + b² = c²</span>
-                            <span class="absolute top-10 right-4">f(x) = x²</span>
-                            <span class="absolute bottom-2 left-6">sin A = a / c</span>
-                            <span class="absolute bottom-5 right-6">x = (-b ± √Δ) / 2a</span>
-                        </div>
-                        <div class="flex flex-col items-center text-center mt-2">
-                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center border border-white/20 mb-2 relative shadow-lg">
-                                <span class="text-3xl font-black text-brand-gold font-serif">M</span>
-                                <div class="absolute inset-0 border-2 border-dashed border-brand-gold rounded-full animate-[spin_10s_linear_infinite]"></div>
-                            </div>
-                            <h2 class="text-2xl font-black tracking-wide text-white font-serif">MathSphere</h2>
-                            <p class="text-xs text-brand-cream/90 font-serif italic mb-2">by TS. Nguyễn Văn Thà</p>
-                            <div class="w-10 h-0.5 bg-brand-gold/80 mb-2.5"></div>
-                            <p class="text-[11px] uppercase tracking-wider font-bold text-brand-gold">Hệ Thống Nộp Bài Tập Trực Tuyến</p>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-4 bg-slate-50" style="clip-path: ellipse(60% 100% at 50% 100%);"></div>
-                    </div>
+                <p class="text-xs italic text-brand-cream/90">
+                    by TS. Nguyễn Văn Thà
+                </p>
+
+                <div class="w-10 h-0.5 bg-brand-gold my-2"></div>
+
+                <p class="text-[11px] uppercase tracking-wider font-bold text-brand-gold">
+                    Hệ Thống Nộp Bài Tập Trực Tuyến
+                </p>
+
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 h-4 bg-slate-50"
+                 style="clip-path:ellipse(60% 100% at 50% 100%);">
+            </div>
+
+        </div>     
 
                     <!-- Scrollable Content -->
                     <div class="flex-grow overflow-y-auto bg-slate-50 p-4 pb-20 custom-scrollbar z-20">
