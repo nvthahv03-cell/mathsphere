@@ -90,6 +90,14 @@
 <button id="installGuideBtn" class="install-btn">📲 Đưa ra màn hình chính</button>
 
 <script>
+   const installBtn = document.getElementById("installGuideBtn");
+
+if (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true
+) {
+    installBtn.remove();
+}
     document.getElementById("installGuideBtn").onclick = function() {
         const ua = navigator.userAgent.toLowerCase();
         if (/android/.test(ua)) {
