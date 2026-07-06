@@ -1,0 +1,30 @@
+{
+  "name": "MathSphere",
+  "short_name": "MathSphere",
+  "description": "Hệ thống học tập số by TS. Nguyễn Văn Thà",
+  "start_url": "/MathSphere-/",
+  "scope": "/MathSphere-/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#001c3d",
+  "theme_color": "#001c3d",
+
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
