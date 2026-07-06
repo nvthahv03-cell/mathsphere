@@ -176,42 +176,76 @@
 
         </div>     
 
-                    <!-- Scrollable Content -->
+        <!-- SCROLLABLE CONTENT BODY -->
                     <div class="flex-grow overflow-y-auto bg-slate-50 p-4 pb-20 custom-scrollbar z-20">
-                        <!-- HOME VIEW -->
+                        
+                        <!-- 1. HOME VIEW -->
                         <div id="view-trangchu" class="tab-content active space-y-4">
+                            <!-- Class Grid exactly as shown in original images -->
                             <div class="grid grid-cols-2 gap-3 pt-2">
+                                <!-- Lớp 9 -->
                                 <button onclick="selectClassForSubmission('Lớp 9')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-blue-200 transition group-hover:scale-105"><i class="fa-solid fa-book-open"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-blue-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-book-open"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Tải Tài Liệu / Nộp</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Lớp 9 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-blue-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Lớp 9 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-blue-500"></i>
+                                    </span>
                                 </button>
+                                <!-- Lớp 10 -->
                                 <button onclick="selectClassForSubmission('Lớp 10')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-emerald-200 transition group-hover:scale-105"><i class="fa-solid fa-book"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-emerald-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Tải Tài Liệu / Nộp</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Lớp 10 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-emerald-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Lớp 10 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-emerald-500"></i>
+                                    </span>
                                 </button>
+                                <!-- Lớp 11 -->
                                 <button onclick="selectClassForSubmission('Lớp 11')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-orange-200 transition group-hover:scale-105"><i class="fa-solid fa-book"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-orange-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Tải Tài Liệu / Nộp</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Lớp 11 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-orange-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Lớp 11 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-orange-500"></i>
+                                    </span>
                                 </button>
+                                <!-- Lớp 12 -->
                                 <button onclick="selectClassForSubmission('Lớp 12')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-rose-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-rose-200 transition group-hover:scale-105"><i class="fa-solid fa-book"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-rose-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-rose-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Tải Tài Liệu / Nộp</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Lớp 12 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-rose-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Lớp 12 <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-rose-500"></i>
+                                    </span>
                                 </button>
+                                <!-- Bồi dưỡng HSG -->
                                 <button onclick="selectClassForSubmission('Bồi dưỡng HSG')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-violet-600 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-violet-200 transition group-hover:scale-105"><i class="fa-solid fa-trophy"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-violet-600 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-violet-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Chuyên đề nâng cao</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Bồi dưỡng HSG <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-violet-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Bồi dưỡng HSG <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-violet-500"></i>
+                                    </span>
                                 </button>
+                                <!-- Lớp Khác -->
                                 <button onclick="selectClassForSubmission('Lớp khác')" class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 flex flex-col items-start text-left transition duration-200 group active:scale-95">
-                                    <div class="w-11 h-11 rounded-xl bg-cyan-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-cyan-200 transition group-hover:scale-105"><i class="fa-solid fa-folder-open"></i></div>
+                                    <div class="w-11 h-11 rounded-xl bg-cyan-500 text-white flex items-center justify-center text-xl mb-3 shadow-md shadow-cyan-200 transition group-hover:scale-105">
+                                        <i class="fa-solid fa-folder-open"></i>
+                                    </div>
                                     <span class="text-[11px] text-slate-400 font-bold tracking-wide uppercase">Tổng hợp</span>
-                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">Lớp Khác <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-cyan-500"></i></span>
+                                    <span class="text-base font-bold text-slate-800 flex items-center gap-1 w-full justify-between">
+                                        Lớp Khác <i class="fa-solid fa-chevron-right text-xs text-slate-300 group-hover:text-cyan-500"></i>
+                                    </span>
                                 </button>
                             </div>
+
+                            <!-- Bottom location banner mimicking the original UI -->
                             <div class="bg-white p-3 rounded-2xl border border-slate-100 flex justify-between items-center text-[11px] text-slate-500 font-medium shadow-sm">
                                 <span class="flex items-center gap-1.5 text-blue-800"><i class="fa-solid fa-location-dot"></i> Hòa Xuân, Đà Nẵng</span>
                                 <span class="w-px h-4 bg-slate-200"></span>
@@ -219,17 +253,19 @@
                             </div>
                         </div>
 
-                        <!-- SUBMISSION VIEW -->
+                        <!-- 2. SUBMISSION VIEW -->
                         <div id="view-nopbai" class="tab-content space-y-4">
                             <div class="flex items-center gap-2 pb-1 border-b border-slate-100">
                                 <i class="fa-solid fa-paper-plane text-blue-600"></i>
                                 <h3 class="font-bold text-slate-800 text-lg">Phiếu Nộp Bài Tập</h3>
                             </div>
+                            
                             <form id="submission-form" onsubmit="handleFormSubmit(event)" class="space-y-3.5 text-sm">
                                 <div>
                                     <label class="block text-slate-600 font-bold mb-1">Họ và Tên Học Sinh <span class="text-rose-500">*</span></label>
                                     <input type="text" id="form-student-name" required placeholder="Nhập đầy đủ họ và tên..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
                                 </div>
+                                
                                 <div>
                                     <label class="block text-slate-600 font-bold mb-1">Lớp Học <span class="text-rose-500">*</span></label>
                                     <select id="form-student-class" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
@@ -242,10 +278,12 @@
                                         <option value="Lớp khác">Lớp khác</option>
                                     </select>
                                 </div>
+
                                 <div>
                                     <label class="block text-slate-600 font-bold mb-1">Chuyên Đề / Bài Tập <span class="text-rose-500">*</span></label>
                                     <input type="text" id="form-assignment-title" required placeholder="Ví dụ: Bài tập Hệ Thức Lượng..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
                                 </div>
+
                                 <div>
                                     <label class="block text-slate-600 font-bold mb-1">Đính Kèm File Vở Ghi / PDF <span class="text-rose-500">*</span></label>
                                     <div class="border-2 border-dashed border-slate-200 hover:border-blue-500 rounded-xl p-4 text-center cursor-pointer bg-slate-50 transition relative">
@@ -257,89 +295,790 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-blue-100 flex items-center justify-center gap-2">
                                     <i class="fa-solid fa-cloud-arrow-up"></i> Gửi Bài Nộp (Đồng bộ ngay)
                                 </button>
                             </form>
                         </div>
 
-                        <!-- MATERIALS, NOTIFICATIONS, PERSONAL VIEW -->
+                        <!-- 3. MATERIALS VIEW -->
                         <div id="view-hoclieu" class="tab-content space-y-4">
                             <div class="flex items-center gap-2 pb-1 border-b border-slate-100">
                                 <i class="fa-solid fa-folder-open text-amber-500"></i>
                                 <h3 class="font-bold text-slate-800 text-lg">Kho Tài Liệu & Chuyên Đề</h3>
                             </div>
-                            <div class="space-y-3" id="materials-container"></div>
+                            <div class="space-y-3" id="materials-container">
+                                <!-- Dynamic rendering of study materials -->
+                            </div>
                         </div>
 
+                        <!-- 4. NOTIFICATIONS VIEW -->
                         <div id="view-thongbao" class="tab-content space-y-4">
                             <div class="flex items-center gap-2 pb-1 border-b border-slate-100">
                                 <i class="fa-solid fa-bell text-rose-500"></i>
                                 <h3 class="font-bold text-slate-800 text-lg">Thông Báo Hệ Thống</h3>
                             </div>
                             <div class="space-y-3">
-                                <!-- Thông báo mẫu -->
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-1">
+                                    <div class="flex justify-between items-center">
+                                        <span class="px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-600 text-[10px] font-bold">Khẩn cấp</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">Hôm nay, 14:00</span>
+                                    </div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Hạn cuối nộp bài tập Số Học nâng cao</h4>
+                                    <p class="text-xs text-slate-500">Các em học sinh nhóm Bồi dưỡng HSG lưu ý hoàn thiện và đăng ảnh chụp bài nộp trước 22:00 tối nay nhé.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-1">
+                                    <div class="flex justify-between items-center">
+                                        <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 text-[10px] font-bold">Mới cập nhật</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">Hôm qua, 09:30</span>
+                                    </div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Đã đưa chuyên đề Hệ Thức Lượng Hình Học Lớp 9 lên hệ thống</h4>
+                                    <p class="text-xs text-slate-500">File tài liệu tổng hợp lý thuyết và bài tập chọn lọc đã có sẵn tại Tab Học liệu để các em ôn tập.</p>
+                                </div>
                             </div>
                         </div>
 
+                        <!-- 5. PERSONAL / PROFILE VIEW -->
                         <div id="view-canhan" class="tab-content space-y-4">
                             <div class="flex items-center gap-2 pb-1 border-b border-slate-100">
                                 <i class="fa-solid fa-user text-indigo-500"></i>
                                 <h3 class="font-bold text-slate-800 text-lg">Thông Tin Cá Nhân</h3>
                             </div>
-                            <!-- Nội dung cá nhân -->
+                            <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-brand-blue text-brand-gold flex items-center justify-center text-xl font-bold">
+                                    HS
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Tài Khoản Thử Nghiệm</h4>
+                                    <p class="text-xs text-slate-400">hocsinh.demo@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Install App Tutorial Simulator / Direct Action -->
+                            <div class="bg-brand-blue/5 border border-brand-blue/10 p-4 rounded-2xl space-y-3">
+                                <div class="flex items-center gap-2 text-brand-blue font-bold text-sm">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>Tiện ích cài đặt nhanh</span>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">Cài đặt trực tiếp biểu tượng MathSphere lên màn hình điện thoại mà không cần mở trình duyệt mỗi lần sử dụng.</p>
+                                
+                                <button onclick="simulateShortcutFlow()" class="w-full bg-brand-blue hover:bg-brand-blueDark text-white font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-md">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i> Hướng dẫn tạo lối tắt màn hình
+                                </button>
+                            </div>
                         </div>
+
                     </div>
 
-                    <!-- Bottom Navigation -->
+                    <!-- App Bottom Navigation (Matches original tabs) -->
                     <div class="absolute bottom-0 left-0 right-0 h-[64px] bg-white border-t border-slate-100 flex justify-around items-center px-4 pb-2 z-40">
-                        <button onclick="switchTab('trangchu')" id="nav-trangchu" class="flex flex-col items-center gap-1 text-[10px] font-bold text-blue-600 transition"><i class="fa-solid fa-house text-[18px]"></i><span>Trang chủ</span></button>
-                        <button onclick="switchTab('nopbai')" id="nav-nopbai" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-cloud-arrow-up text-[18px]"></i><span>Nộp bài</span></button>
-                        <button onclick="switchTab('hoclieu')" id="nav-hoclieu" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-book-open-reader text-[18px]"></i><span>Học liệu</span></button>
-                        <button onclick="switchTab('thongbao')" id="nav-thongbao" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-bell text-[18px]"></i><span>Thông báo</span></button>
-                        <button onclick="switchTab('canhan')" id="nav-canhan" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition"><i class="fa-solid fa-circle-user text-[18px]"></i><span>Cá nhân</span></button>
+                        <button onclick="switchTab('trangchu')" id="nav-trangchu" class="flex flex-col items-center gap-1 text-[10px] font-bold text-blue-600 transition">
+                            <i class="fa-solid fa-house text-[18px]"></i>
+                            <span>Trang chủ</span>
+                        </button>
+                        <button onclick="switchTab('nopbai')" id="nav-nopbai" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-cloud-arrow-up text-[18px]"></i>
+                            <span>Nộp bài</span>
+                        </button>
+                        <button onclick="switchTab('hoclieu')" id="nav-hoclieu" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-book-open-reader text-[18px]"></i>
+                            <span>Học liệu</span>
+                        </button>
+                        <button onclick="switchTab('thongbao')" id="nav-thongbao" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-bell text-[18px]"></i>
+                            <span>Thông báo</span>
+                        </button>
+                        <button onclick="switchTab('canhan')" id="nav-canhan" class="flex flex-col items-center gap-1 text-[10px] font-bold text-slate-400 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-circle-user text-[18px]"></i>
+                            <span>Cá nhân</span>
+                        </button>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- RIGHT: Google Sheets -->
+        <!-- RIGHT: Google Sheets Real-time DB Simulator (7 Cols) -->
         <section class="lg:col-span-7 flex flex-col gap-6">
-            <!-- Nội dung Google Sheets từ file gốc -->
+            <div class="bg-slate-800 rounded-3xl border border-slate-700 shadow-xl overflow-hidden flex flex-col h-full min-h-[600px]">
+                
+                <!-- Database Header -->
+                <div class="bg-slate-800 p-5 border-b border-slate-700 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-emerald-600 text-white p-2 rounded-lg text-lg">
+                            <i class="fa-solid fa-table"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">
+                                Google Sheets Database
+                                <span class="bg-slate-700 px-2.5 py-0.5 rounded-full text-[10px] font-bold border border-slate-600 text-slate-300 uppercase tracking-wide">MathSphere_DB</span>
+                            </h2>
+                            <p class="text-xs text-slate-400">Bảng dữ liệu đám mây đồng bộ trực tiếp với Google AppSheet</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 w-full sm:w-auto">
+                        <button onclick="exportToCSV()" class="flex-grow sm:flex-grow-0 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold py-2 px-3.5 rounded-lg border border-slate-600 transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-download"></i> Xuất CSV
+                        </button>
+                        <button onclick="triggerResetDatabase()" class="flex-grow sm:flex-grow-0 bg-rose-950/40 hover:bg-rose-900/40 text-rose-300 text-xs font-bold py-2 px-3.5 rounded-lg border border-rose-800/60 transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-rotate"></i> Reset dữ liệu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Google Sheet Tab Selection -->
+                <div class="bg-slate-900/60 px-4 border-b border-slate-700 flex gap-1">
+                    <button id="tab-sheet-submissions" onclick="switchSheetTab('submissions')" class="py-3 px-4 text-xs font-bold border-b-2 border-emerald-500 text-emerald-400 flex items-center gap-2 transition">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> NỘP BÀI TẬP <span id="count-submissions" class="bg-slate-800 px-1.5 py-0.5 rounded-md text-[10px]">3</span>
+                    </button>
+                    <button id="tab-sheet-students" onclick="switchSheetTab('students')" class="py-3 px-4 text-xs font-bold border-b-2 border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-500 flex items-center gap-2 transition">
+                        <i class="fa-solid fa-graduation-cap"></i> DANH SÁCH HỌC SINH <span id="count-students" class="bg-slate-800 px-1.5 py-0.5 rounded-md text-[10px]">4</span>
+                    </button>
+                    <button id="tab-sheet-materials" onclick="switchSheetTab('materials')" class="py-3 px-4 text-xs font-bold border-b-2 border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-500 flex items-center gap-2 transition">
+                        <i class="fa-solid fa-book"></i> HỌC LIỆU <span id="count-materials" class="bg-slate-800 px-1.5 py-0.5 rounded-md text-[10px]">4</span>
+                    </button>
+                </div>
+
+                <!-- Spreadsheet Tables Area -->
+                <div class="flex-grow overflow-auto p-4 custom-scrollbar bg-slate-950/20">
+                    
+                    <!-- 1. Submission Sheet -->
+                    <div id="sheet-submissions" class="sheet-content">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="border-b border-slate-700 text-slate-400 font-semibold uppercase tracking-wider bg-slate-800/40">
+                                    <th class="p-3">Mã Bài Nộp</th>
+                                    <th class="p-3">Học Sinh</th>
+                                    <th class="p-3">Lớp nộp</th>
+                                    <th class="p-3">Tên Bài Tập</th>
+                                    <th class="p-3">File Đính Kèm</th>
+                                    <th class="p-3">Thời Gian</th>
+                                    <th class="p-3 text-center">Trạng Thái</th>
+                                    <th class="p-3 text-center">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="submission-sheet-rows" class="divide-y divide-slate-800 text-slate-300">
+                                <!-- Dynamic entries -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 2. Students Sheet -->
+                    <div id="sheet-students" class="sheet-content hidden">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="border-b border-slate-700 text-slate-400 font-semibold uppercase tracking-wider bg-slate-800/40">
+                                    <th class="p-3">Mã Học Sinh</th>
+                                    <th class="p-3">Họ và Tên</th>
+                                    <th class="p-3">Lớp học</th>
+                                    <th class="p-3">Gmail</th>
+                                    <th class="p-3">Trạng Thái Liên Kết</th>
+                                </tr>
+                            </thead>
+                            <tbody id="student-sheet-rows" class="divide-y divide-slate-800 text-slate-300">
+                                <!-- Dynamic entries -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 3. Materials Sheet -->
+                    <div id="sheet-materials" class="sheet-content hidden">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="border-b border-slate-700 text-slate-400 font-semibold uppercase tracking-wider bg-slate-800/40">
+                                    <th class="p-3">Mã Học Liệu</th>
+                                    <th class="p-3">Tên Chuyên Đề / Tài Liệu</th>
+                                    <th class="p-3">Dành Cho Lớp</th>
+                                    <th class="p-3">Tải Xuống</th>
+                                </tr>
+                            </thead>
+                            <tbody id="materials-sheet-rows" class="divide-y divide-slate-800 text-slate-300">
+                                <!-- Dynamic entries -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- Sync Console Log -->
+                <div class="bg-slate-900 border-t border-slate-700 p-4 font-mono text-[11px] text-emerald-400 space-y-1 select-none">
+                    <div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> <span class="text-slate-500">[02/07/2026 14:57:26]</span> Hệ thống MathSphere đã khởi động thành công. Sẵn sàng lắng nghe từ các thiết bị di động.</div>
+                    <div id="console-logs" class="space-y-1">
+                        <!-- Dynamic logs -->
+                    </div>
+                </div>
+
+            </div>
         </section>
+
     </main>
 
-    <!-- Modals và Script JS đầy đủ -->
+    <!-- Modal for showing Shortcut Installation Guide -->
+    <div id="shortcut-modal" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden backdrop-blur-sm">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-lg w-full p-6 text-slate-200 relative shadow-2xl">
+            <button onclick="closeShortcutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition text-lg">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-brand-gold text-brand-blue p-2.5 rounded-xl text-xl">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold font-serif text-brand-gold">Hướng Dẫn Tạo Lối Tắt Màn Hình</h3>
+                    <p class="text-xs text-slate-400">Tải & Khởi chạy ứng dụng trực tiếp từ thiết bị di động</p>
+                </div>
+            </div>
+            <div class="space-y-4 text-xs leading-relaxed">
+                <p>Nền tảng AppSheet (Google) cho phép bạn đóng gói phím tắt của ứng dụng **MathSphere** lên màn hình thiết bị di động cực kỳ dễ dàng theo sơ đồ dưới đây:</p>
+                <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3 font-medium">
+                    <div class="flex gap-3">
+                        <span class="w-5 h-5 bg-brand-gold text-brand-blue rounded-full flex items-center justify-center text-[10px] font-extrabold shrink-0">1</span>
+                        <p class="text-slate-300">Tại giao diện điện thoại, nhấn vào biểu tượng <strong class="text-brand-gold"><i class="fa-solid fa-bars"></i> Menu</strong> ở góc trái màn hình.</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="w-5 h-5 bg-brand-gold text-brand-blue rounded-full flex items-center justify-center text-[10px] font-extrabold shrink-0">2</span>
+                        <p class="text-slate-300">Nhấp chọn mục <strong class="text-brand-gold"><i class="fa-solid fa-arrow-up-from-bracket"></i> Lối tắt màn hình chính</strong> (hoặc "Add to Home Screen").</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <span class="w-5 h-5 bg-brand-gold text-brand-blue rounded-full flex items-center justify-center text-[10px] font-extrabold shrink-0">3</span>
+                        <p class="text-slate-300">Nhấn <strong class="text-brand-gold">Thêm/Đồng Ý</strong> để lưu ứng dụng. Logo MathSphere sẽ xuất hiện trên màn hình chính tức thì!</p>
+                    </div>
+                </div>
+                <div class="border border-brand-gold/20 bg-brand-gold/5 p-3 rounded-xl flex items-center gap-2 text-brand-cream/80 text-[11px]">
+                    <i class="fa-solid fa-circle-info text-brand-gold shrink-0"></i>
+                    <span><strong>Mách nhỏ:</strong> Tính năng này tương thích hoàn hảo trên cả trình duyệt Chrome (Android) và Safari (iOS).</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for File Preview Simulation -->
+    <div id="file-modal" class="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 hidden backdrop-blur-md">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl">
+            <!-- Modal Header -->
+            <div class="bg-slate-800 p-4 border-b border-slate-700 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-rose-500 text-lg"></i>
+                    <div>
+                        <h3 id="modal-file-title" class="font-bold text-sm text-slate-100">Tên_File.pdf</h3>
+                        <p id="modal-file-meta" class="text-[11px] text-slate-400">Người nộp: ... | Lớp: ...</p>
+                    </div>
+                </div>
+                <button onclick="closeFileModal()" class="text-slate-400 hover:text-white transition text-lg p-1">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+            <!-- Modal Content (Simulating a grading screen sheet) -->
+            <div class="p-6 bg-slate-950/40 space-y-4">
+                <div class="border border-slate-800 bg-slate-950 rounded-2xl p-6 min-h-[300px] flex flex-col items-center justify-center text-center space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-blue-950 text-blue-400 flex items-center justify-center text-2xl border border-blue-800">
+                        <i class="fa-solid fa-spell-check"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 text-base">Trình duyệt tài liệu thông minh (AppSheet View)</h4>
+                        <p class="text-xs text-slate-400 max-w-md mx-auto mt-1">Dữ liệu bài tập của học sinh được lưu trữ an toàn trên Google Drive cá nhân của thầy dưới dạng PDF/Hình ảnh.</p>
+                    </div>
+                    
+                    <!-- Grading Action Simulator -->
+                    <div class="pt-4 flex gap-2">
+                        <button id="modal-btn-approve" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-xl text-xs transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-check"></i> Phê duyệt & Chấm điểm
+                        </button>
+                        <button id="modal-btn-reject" class="bg-rose-900/60 hover:bg-rose-800/80 text-rose-200 font-bold py-2 px-4 rounded-xl text-xs transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-xmark"></i> Từ chối nộp lại
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Dialog Modal (Replaces native alert and confirm) -->
+    <div id="custom-dialog-modal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 hidden backdrop-blur-sm">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-sm w-full p-6 text-slate-200 text-center space-y-4 shadow-2xl">
+            <div id="dialog-icon-container" class="w-12 h-12 rounded-full mx-auto flex items-center justify-center text-xl">
+                <!-- Icon loaded dynamically -->
+            </div>
+            <div class="space-y-1">
+                <h3 id="dialog-title" class="font-bold text-base text-slate-100">Thông báo</h3>
+                <p id="dialog-message" class="text-xs text-slate-400"></p>
+            </div>
+            <div class="flex gap-2 justify-center pt-2" id="dialog-actions">
+                <!-- Buttons loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Global App JavaScript -->
     <script>
-        // Toàn bộ JavaScript dài từ file gốc của em đã được ghép vào đây
-        const defaultState = { /* ... */ };
-        // (Tất cả functions: switchTab, handleFormSubmit, render..., safeAlert, v.v.)
-        // Bạn có thể copy phần script từ file pasted-text.txt vào đây nếu cần chỉnh sửa thêm
+        // Default Mock Data for state management
+        const defaultState = {
+            submissions: [
+                { id: "SUB-8401", studentName: "Nguyễn Hoàng Nam", class: "Lớp 9", assignment: "Bài tập Hệ thức lượng Chuyên đề 1", file: "hoangnam_hethucluong.pdf", time: "02/07/2026 14:30", status: "Chờ chấm" },
+                { id: "SUB-7392", studentName: "Trần Thị Mai", class: "Lớp 10", assignment: "Chuyên đề Hàm số bậc hai", file: "maitran_chuyende_hamsobachai.pdf", time: "02/07/2026 12:15", status: "Đã duyệt" },
+                { id: "SUB-6291", studentName: "Lê Văn Tiến", class: "Bồi dưỡng HSG", assignment: "Đề thi học sinh giỏi số học", file: "levantien_hsg_sohoc.pdf", time: "01/07/2026 19:45", status: "Đã duyệt" }
+            ],
+            students: [
+                { id: "HS-001", name: "Nguyễn Hoàng Nam", class: "Lớp 9", email: "hoangnam.demo@gmail.com", active: "Đã kích hoạt" },
+                { id: "HS-002", name: "Trần Thị Mai", class: "Lớp 10", email: "maitran@gmail.com", active: "Đã kích hoạt" },
+                { id: "HS-003", name: "Lê Văn Tiến", class: "Bồi dưỡng HSG", email: "levantien@gmail.com", active: "Đã kích hoạt" },
+                { id: "HS-004", name: "Phạm Minh Thư", class: "Lớp 12", email: "minhthu@gmail.com", active: "Chờ kích hoạt" }
+            ],
+            materials: [
+                { id: "MAT-01", title: "Bộ đề ôn tuyển sinh vào lớp 10 chuyên Toán", class: "Lớp 9", downloads: 142 },
+                { id: "MAT-02", title: "Chuyên đề hình học phẳng nâng cao Olympiad", class: "Bồi dưỡng HSG", downloads: 89 },
+                { id: "MAT-03", title: "Phương trình lượng giác và ứng dụng", class: "Lớp 11", downloads: 110 },
+                { id: "MAT-04", title: "Giải nhanh hình học giải tích không gian", class: "Lớp 12", downloads: 75 }
+            ]
+        };
+
+        // Load or initialize state from localStorage
+        let appState = JSON.parse(localStorage.getItem('mathsphere_state')) || { ...defaultState };
+
+        function saveState() {
+            localStorage.setItem('mathsphere_state', JSON.stringify(appState));
+        }
+
+        // Custom Safe Alert Dialog
+        function safeAlert(message, title = "Thông báo", isSuccess = true) {
+            const modal = document.getElementById('custom-dialog-modal');
+            const iconContainer = document.getElementById('dialog-icon-container');
+            const titleEl = document.getElementById('dialog-title');
+            const messageEl = document.getElementById('dialog-message');
+            const actionsContainer = document.getElementById('dialog-actions');
+
+            titleEl.textContent = title;
+            messageEl.textContent = message;
+
+            if (isSuccess) {
+                iconContainer.className = "w-12 h-12 rounded-full mx-auto flex items-center justify-center text-xl bg-emerald-950 text-emerald-400 border border-emerald-800";
+                iconContainer.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            } else {
+                iconContainer.className = "w-12 h-12 rounded-full mx-auto flex items-center justify-center text-xl bg-blue-950 text-blue-400 border border-blue-800";
+                iconContainer.innerHTML = '<i class="fa-solid fa-circle-info"></i>';
+            }
+
+            actionsContainer.innerHTML = `
+                <button onclick="closeCustomDialog()" class="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 font-bold transition">
+                    Đóng
+                </button>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        // Custom Safe Confirm Dialog
+        function safeConfirm(message, title, onConfirm) {
+            const modal = document.getElementById('custom-dialog-modal');
+            const iconContainer = document.getElementById('dialog-icon-container');
+            const titleEl = document.getElementById('dialog-title');
+            const messageEl = document.getElementById('dialog-message');
+            const actionsContainer = document.getElementById('dialog-actions');
+
+            titleEl.textContent = title;
+            messageEl.textContent = message;
+
+            iconContainer.className = "w-12 h-12 rounded-full mx-auto flex items-center justify-center text-xl bg-rose-950 text-rose-400 border border-rose-800";
+            iconContainer.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+
+            window.currentConfirmCallback = () => {
+                onConfirm();
+                closeCustomDialog();
+            };
+
+            actionsContainer.innerHTML = `
+                <button onclick="closeCustomDialog()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 font-bold transition">
+                    Hủy bỏ
+                </button>
+                <button onclick="window.currentConfirmCallback()" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-xs text-white font-bold transition">
+                    Xác nhận
+                </button>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        function closeCustomDialog() {
+            document.getElementById('custom-dialog-modal').classList.add('hidden');
+        }
+
+        // Initialize and render all components
+        window.addEventListener('DOMContentLoaded', () => {
+            renderSubmissionsTable();
+            renderStudentsTable();
+            renderMaterialsTable();
+            renderMaterialsMobileView();
+            updateTabCounts();
+        });
+
+        // Switch Active Screen Tabs inside Mobile App
+        function switchTab(tabId) {
+            // Update active content
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(`view-${tabId}`).classList.add('active');
+
+            // Toggle custom Header visibility for a native mobile feel
+            const headerBlock = document.getElementById('app-header-block');
+            if (tabId === 'trangchu') {
+                headerBlock.classList.remove('hidden');
+            } else {
+                headerBlock.classList.add('hidden');
+            }
+
+            // Update navigation tab highlights
+            const navButtons = ['trangchu', 'nopbai', 'hoclieu', 'thongbao', 'canhan'];
+            navButtons.forEach(btn => {
+                const el = document.getElementById(`nav-${btn}`);
+                if (btn === tabId) {
+                    el.classList.add('text-blue-600');
+                    el.classList.remove('text-slate-400');
+                } else {
+                    el.classList.remove('text-blue-600');
+                    el.classList.add('text-slate-400');
+                }
+            });
+        }
+
+        // Triggered when clicking class shortcuts on mobile home screen
+        function selectClassForSubmission(className) {
+            switchTab('nopbai');
+            document.getElementById('form-student-class').value = className;
+            document.getElementById('form-assignment-title').focus();
+            addConsoleLog(`Thiết bị di động mở form nộp bài cho [${className}]`, 'info');
+        }
+
+        // File upload field UI updater
+        function updateFileName(input) {
+            const labelText = document.getElementById('file-label-text');
+            const fileIcon = document.getElementById('file-icon');
+            if (input.files && input.files.length > 0) {
+                labelText.textContent = input.files[0].name;
+                labelText.className = "text-xs text-emerald-600 font-bold";
+                fileIcon.className = "fa-solid fa-file-pdf text-emerald-500 text-2xl";
+            } else {
+                labelText.textContent = "Chọn hoặc kéo file PDF/Hình ảnh vào đây";
+                labelText.className = "text-xs text-slate-600 font-semibold";
+                fileIcon.className = "fa-solid fa-cloud-arrow-up text-slate-400 text-2xl";
+            }
+        }
+
+        // Process new submission from Mobile mockup
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const studentName = document.getElementById('form-student-name').value;
+            const studentClass = document.getElementById('form-student-class').value;
+            const assignmentTitle = document.getElementById('form-assignment-title').value;
+            const fileInput = document.getElementById('form-file-input');
+            const fileName = fileInput.files[0] ? fileInput.files[0].name : "baitap_nop.pdf";
+
+            const newId = "SUB-" + Math.floor(1000 + Math.random() * 9000);
+            const formattedTime = getFormattedDateTime();
+
+            const newSubmission = {
+                id: newId,
+                studentName: studentName,
+                class: studentClass,
+                assignment: assignmentTitle,
+                file: fileName,
+                time: formattedTime,
+                status: "Chờ chấm",
+                isNew: true // custom flag to trigger the flash highlight animation
+            };
+
+            // Add new submission to database state
+            appState.submissions.unshift(newSubmission);
+            saveState();
+
+            // Reset Form Fields
+            document.getElementById('submission-form').reset();
+            updateFileName(fileInput);
+
+            // Re-render Views
+            renderSubmissionsTable();
+            updateTabCounts();
+            switchTab('trangchu');
+
+            // Log entry into simulation console
+            addConsoleLog(`Dữ liệu mới nhận từ [${studentName} - ${studentClass}]: ${assignmentTitle} (File: ${fileName})`, 'success');
+            
+            // Auto scroll to spreadsheet rows to show the sync action immediately
+            const spreadsheetSection = document.getElementById('sheet-submissions');
+            spreadsheetSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Generate clean date format (DD/MM/YYYY HH:MM)
+        function getFormattedDateTime() {
+            const now = new Date();
+            const pad = (num) => String(num).padStart(2, '0');
+            return `${pad(now.getDate())}/${pad(now.getMonth() + 1)}/${now.getFullYear()} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+        }
+
+        // Switch Google Sheets Spreadsheet Tabs
+        function switchSheetTab(tabName) {
+            document.querySelectorAll('.sheet-content').forEach(sheet => sheet.classList.add('hidden'));
+            document.getElementById(`sheet-${tabName}`).classList.remove('hidden');
+
+            const sheetTabs = ['submissions', 'students', 'materials'];
+            sheetTabs.forEach(tab => {
+                const el = document.getElementById(`tab-sheet-${tab}`);
+                if (tab === tabName) {
+                    el.className = "py-3 px-4 text-xs font-bold border-b-2 border-emerald-500 text-emerald-400 flex items-center gap-2 transition";
+                } else {
+                    el.className = "py-3 px-4 text-xs font-bold border-b-2 border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-500 flex items-center gap-2 transition";
+                }
+            });
+        }
+
+        // Open Document/Homework file preview modal
+        function openFilePreview(subId) {
+            const sub = appState.submissions.find(item => item.id === subId);
+            if (!sub) return;
+
+            document.getElementById('modal-file-title').textContent = sub.file;
+            document.getElementById('modal-file-meta').textContent = `Người nộp: ${sub.studentName} | Lớp: ${sub.class} | Bài tập: ${sub.assignment}`;
+
+            // Configure grade action buttons
+            const btnApprove = document.getElementById('modal-btn-approve');
+            const btnReject = document.getElementById('modal-btn-reject');
+
+            btnApprove.onclick = () => {
+                changeSubmissionStatus(subId, 'Đã duyệt');
+                closeFileModal();
+            };
+
+            btnReject.onclick = () => {
+                changeSubmissionStatus(subId, 'Từ chối');
+                closeFileModal();
+            };
+
+            document.getElementById('file-modal').classList.remove('hidden');
+            addConsoleLog(`Quản trị viên đang mở xem trước file: ${sub.file}`, 'info');
+        }
+
+        function closeFileModal() {
+            document.getElementById('file-modal').classList.add('hidden');
+        }
+
+        // Render dynamic table rows in Database simulation
+        function renderSubmissionsTable() {
+            const tableBody = document.getElementById('submission-sheet-rows');
+            tableBody.innerHTML = '';
+
+            appState.submissions.forEach((sub, index) => {
+                const tr = document.createElement('tr');
+                tr.className = `border-b border-slate-800 hover:bg-slate-800/20 transition ${sub.isNew ? 'new-sync-row' : ''}`;
+                
+                // Clear trigger flag
+                if (sub.isNew) {
+                    setTimeout(() => { delete sub.isNew; saveState(); }, 3000);
+                }
+
+                let statusBadge = '';
+                if (sub.status === 'Đã duyệt') {
+                    statusBadge = '<span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-semibold text-[10px]">Đã duyệt</span>';
+                } else if (sub.status === 'Từ chối') {
+                    statusBadge = '<span class="px-2 py-0.5 rounded-full bg-rose-950 text-rose-400 border border-rose-800 font-semibold text-[10px]">Từ chối</span>';
+                } else {
+                    statusBadge = '<span class="px-2 py-0.5 rounded-full bg-amber-950 text-amber-400 border border-amber-800 font-semibold text-[10px] animate-pulse">Chờ chấm</span>';
+                }
+
+                tr.innerHTML = `
+                    <td class="p-3 font-mono text-slate-400 font-bold">${sub.id}</td>
+                    <td class="p-3 font-semibold text-slate-100">${sub.studentName}</td>
+                    <td class="p-3 text-slate-300">${sub.class}</td>
+                    <td class="p-3 text-slate-300 font-medium">${sub.assignment}</td>
+                    <td class="p-3 text-blue-400 hover:underline cursor-pointer" onclick="openFilePreview('${sub.id}')"><i class="fa-solid fa-file-pdf"></i> ${sub.file}</td>
+                    <td class="p-3 text-slate-400 font-mono">${sub.time}</td>
+                    <td class="p-3 text-center">${statusBadge}</td>
+                    <td class="p-3 text-center text-slate-300">
+                        <div class="flex items-center justify-center gap-1.5">
+                            <button onclick="changeSubmissionStatus('${sub.id}', 'Đã duyệt')" class="p-1 text-emerald-400 hover:bg-emerald-950 rounded transition" title="Duyệt bài"><i class="fa-solid fa-circle-check"></i></button>
+                            <button onclick="changeSubmissionStatus('${sub.id}', 'Từ chối')" class="p-1 text-rose-400 hover:bg-rose-950 rounded transition" title="Từ chối"><i class="fa-solid fa-circle-xmark"></i></button>
+                            <button onclick="deleteSubmission('${sub.id}')" class="p-1 text-slate-400 hover:bg-slate-700 rounded transition" title="Xóa dòng"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        function renderStudentsTable() {
+            const tableBody = document.getElementById('student-sheet-rows');
+            tableBody.innerHTML = '';
+
+            appState.students.forEach(std => {
+                const tr = document.createElement('tr');
+                tr.className = "border-b border-slate-800 hover:bg-slate-800/20 transition text-slate-300";
+                
+                const activeBadge = std.active === 'Đã kích hoạt'
+                    ? '<span class="px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-semibold text-[10px]"><i class="fa-solid fa-circle-check"></i> Đang hoạt động</span>'
+                    : '<span class="px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700 font-semibold text-[10px]"><i class="fa-solid fa-clock"></i> Chờ duyệt</span>';
+
+                tr.innerHTML = `
+                    <td class="p-3 font-mono font-bold text-slate-400">${std.id}</td>
+                    <td class="p-3 font-semibold text-slate-100">${std.name}</td>
+                    <td class="p-3 font-medium text-slate-300">${std.class}</td>
+                    <td class="p-3 font-mono text-slate-400">${std.email}</td>
+                    <td class="p-3">${activeBadge}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        function renderMaterialsTable() {
+            const tableBody = document.getElementById('materials-sheet-rows');
+            tableBody.innerHTML = '';
+
+            appState.materials.forEach(mat => {
+                const tr = document.createElement('tr');
+                tr.className = "border-b border-slate-800 hover:bg-slate-800/20 transition text-slate-300";
+                tr.innerHTML = `
+                    <td class="p-3 font-mono font-bold text-slate-400">${mat.id}</td>
+                    <td class="p-3 font-semibold text-slate-100">${mat.title}</td>
+                    <td class="p-3 font-medium text-slate-300">${mat.class}</td>
+                    <td class="p-3 font-mono text-slate-400"><i class="fa-solid fa-circle-down"></i> ${mat.downloads} lượt tải</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Render documents view inside the Mobile Mockup Tab
+        function renderMaterialsMobileView() {
+            const container = document.getElementById('materials-container');
+            container.innerHTML = '';
+
+            appState.materials.forEach(mat => {
+                const card = document.createElement('div');
+                card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-3 hover:shadow-md transition duration-200";
+                card.innerHTML = `
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="flex-grow space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[9px] font-bold uppercase tracking-wider">${mat.class}</span>
+                            <span class="text-[9px] text-slate-400 font-semibold"><i class="fa-solid fa-arrow-down-long"></i> ${mat.downloads} tải</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 text-xs line-clamp-2 leading-snug">${mat.title}</h4>
+                        <button onclick="simulateDownload('${mat.id}')" class="text-xs text-blue-600 hover:text-blue-800 font-bold flex items-center gap-1 pt-1.5 hover:underline">
+                            <i class="fa-solid fa-arrow-circle-down"></i> Tải tài liệu về máy (.pdf)
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Simulates admin approving or rejecting a student's submission from database view
+        function changeSubmissionStatus(subId, nextStatus) {
+            const sub = appState.submissions.find(item => item.id === subId);
+            if (sub) {
+                sub.status = nextStatus;
+                saveState();
+                renderSubmissionsTable();
+                addConsoleLog(`Hệ thống cập nhật trạng thái nộp [${subId}] của [${sub.studentName}] thành: ${nextStatus}`, 'info');
+            }
+        }
+
+        // Delete row in mock database
+        function deleteSubmission(subId) {
+            const sub = appState.submissions.find(item => item.id === subId);
+            if (sub) {
+                safeConfirm(
+                    `Bạn có chắc chắn muốn xóa dòng bài nộp của học sinh ${sub.studentName}?`,
+                    "Xác nhận xóa dữ liệu",
+                    () => {
+                        appState.submissions = appState.submissions.filter(item => item.id !== subId);
+                        saveState();
+                        renderSubmissionsTable();
+                        updateTabCounts();
+                        addConsoleLog(`Hệ thống xóa thành công dòng dữ liệu bài nộp [${subId}]`, 'error');
+                    }
+                );
+            }
+        }
+
+        // Download counter simulator inside the mockup
+        function simulateDownload(matId) {
+            const mat = appState.materials.find(item => item.id === matId);
+            if (mat) {
+                mat.downloads++;
+                saveState();
+                renderMaterialsTable();
+                renderMaterialsMobileView();
+                safeAlert(`Hệ thống đang tải tệp tin: ${mat.title}.pdf về thiết bị của em.`, "Bắt đầu tải học liệu");
+                addConsoleLog(`Học sinh tải về tài liệu [${matId}]: ${mat.title}`, 'info');
+            }
+        }
+
+        // Realtime counts indicator for spreadsheet tabs
+        function updateTabCounts() {
+            document.getElementById('count-submissions').textContent = appState.submissions.length;
+            document.getElementById('count-students').textContent = appState.students.length;
+            document.getElementById('count-materials').textContent = appState.materials.length;
+        }
+
+        // Console Log inside bottom monitor block
+        function addConsoleLog(message, type) {
+            const logsContainer = document.getElementById('console-logs');
+            const logItem = document.createElement('div');
+            
+            const now = new Date();
+            const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+
+            let color = 'text-slate-400';
+            if (type === 'success') color = 'text-emerald-400';
+            if (type === 'error') color = 'text-rose-400';
+            if (type === 'info') color = 'text-cyan-400';
+
+            logItem.className = `flex items-start gap-1.5 ${color}`;
+            logItem.innerHTML = `
+                <span class="w-1.5 h-1.5 rounded-full bg-current mt-1.5"></span>
+                <span class="text-slate-500">[${getFormattedDateTime()}]</span>
+                <span>${message}</span>
+            `;
+            
+            logsContainer.appendChild(logItem);
+            
+            // Keep maximum of 6 log messages to avoid layout scrolling overflow
+            while (logsContainer.children.length > 6) {
+                logsContainer.removeChild(logsContainer.firstChild);
+            }
+        }
+
+        // Full app simulation database reset
+        function triggerResetDatabase() {
+            safeConfirm(
+                "Hành động này sẽ thiết lập lại toàn bộ dữ liệu Google Sheets & AppSheet về mặc định. Xác nhận thực hiện?",
+                "Khôi phục cơ sở dữ liệu",
+                () => {
+                    appState = { ...defaultState };
+                    saveState();
+                    renderSubmissionsTable();
+                    renderStudentsTable();
+                    renderMaterialsTable();
+                    renderMaterialsMobileView();
+                    updateTabCounts();
+                    addConsoleLog("Cơ sở dữ liệu Google Sheets đã được khôi phục về trạng thái ban đầu.", "error");
+                }
+            );
+        }
+
+        // Mimic adding shortcut to home screen (PWA simulation)
+        function simulateShortcutFlow() {
+            document.getElementById('shortcut-modal').classList.remove('hidden');
+            addConsoleLog("Người dùng mở bảng hướng dẫn tạo phím tắt (Shortcut) ngoài màn hình chính.", "info");
+        }
+
+        function closeShortcutModal() {
+            document.getElementById('shortcut-modal').classList.add('hidden');
+        }
+
+        // Export data simulator
+        function exportToCSV() {
+            safeAlert("Tệp CSV dữ liệu lưu trữ đã được đóng gói và xuất thành công ra thư mục Downloads của thầy.", "Xuất tệp CSV");
+            addConsoleLog("Đã xuất và tải về bản ghi danh sách bài nộp định dạng .csv", "success");
+        }
     </script>
-...
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const btn = document.getElementById("installGuideBtn");
-    if (!btn) return;
-
-    if (
-        window.matchMedia("(display-mode: standalone)").matches ||
-        window.navigator.standalone === true
-    ) {
-        btn.style.display = "none";
-    }
-
-    window.addEventListener("appinstalled", () => {
-        btn.style.display = "none";
-    });
-
-});
-</script>
-
 </body>
-</html>
-</body>
-</html>
+</html>           
