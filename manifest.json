@@ -1,9 +1,9 @@
 {
-  "name": "MathSphere",
-  "short_name": "MathSphere",
+  "name": "mathsphere",
+  "short_name": "mathsphere",
   "description": "Hệ thống học tập số by TS. Nguyễn Văn Thà",
-  "start_url": "/MathSphere-/",
-  "scope": "/MathSphere-/",
+  "start_url": "/mathsphere/",
+  "scope": "/mathsphere/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#001c3d",
