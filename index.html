@@ -777,8 +777,8 @@ if (
             const studentClass = document.getElementById('form-student-class').value;
             const assignmentTitle = document.getElementById('form-assignment-title').value;
             const fileInput = document.getElementById('form-file-input');
-            const fileName = fileInput.files[0] ? fileInput.files[0].name : "baitap_nop.pdf";
-
+            const files = Array.from(fileInput.files);
+            const fileName = files.length > 0 ? files.map(f => f.name).join(", ") : "Chưa có file";
             const newId = "SUB-" + Math.floor(1000 + Math.random() * 9000);
             const formattedTime = getFormattedDateTime();
 
@@ -788,6 +788,7 @@ if (
                 class: studentClass,
                 assignment: assignmentTitle,
                 file: fileName,
+                files: files,
                 time: formattedTime,
                 status: "Chờ chấm",
                 isNew: true // custom flag to trigger the flash highlight animation
