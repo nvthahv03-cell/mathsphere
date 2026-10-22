@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI MathSphere | HSG12 PRO V2</title>
+<style>
+:root{--navy:#073955;--blue:#08628f;--gold:#efaa29;--bg:#f5f9fd;--line:#dce9f3;--ink:#173a54;--muted:#637f92;--orange:#df5928}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #efb344;outline-offset:2px}button:disabled{opacity:.55;cursor:not-allowed}[hidden]{display:none!important}.wrap{max-width:1340px;margin:auto;padding:22px}.hero{background:linear-gradient(110deg,#053551,#086b94);color:white;border-radius:20px;padding:25px 29px;display:flex;justify-content:space-between;gap:16px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.11em;font-weight:900;color:#ffe18b}.hero h1{font-size:clamp(22px,2.6vw,30px);line-height:1.3;margin:5px 0}.hero p{margin:0;color:#d4eafa}.hero .status{background:#ffffff22;border:1px solid #ffffff55;border-radius:50px;padding:8px 13px;font-size:12px;white-space:nowrap}.notice{background:#fff7e9;border-left:4px solid var(--gold);padding:13px 16px;margin:16px 0;border-radius:11px;color:#80551d}.grid{display:grid;grid-template-columns:minmax(270px,.9fr) minmax(0,1.6fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:17px;box-shadow:0 7px 25px #0a48670c;padding:20px;min-width:0}.card h2{font-size:17px;margin:0 0 12px}.sub{color:var(--muted);font-size:12px;margin:0 0 15px}.field{margin:13px 0}.field label{display:block;font-weight:750;margin-bottom:6px;font-size:12px}.field input,.field select,.field textarea{display:block;width:100%;background:white;color:var(--ink);border:1px solid #cbddea;border-radius:10px;padding:11px 12px;min-height:43px}.field textarea{min-height:135px;resize:vertical}.field small{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.chip{background:#e8f5fc;border:1px solid #c9e5f4;color:#07547c;padding:6px 10px;border-radius:30px;font-size:12px;font-weight:750}.buttons{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.btn{border:0;background:var(--blue);color:white;border-radius:10px;padding:10px 14px;font-weight:750}.btn.alt{background:#e8f2f9;color:#075079}.btn.warn{background:#fff0e7;color:#a83d1b}.btn.orange{background:var(--orange)}.btn:hover:not(:disabled){filter:brightness(1.05)}.helper{font-size:12px;color:var(--muted)}.output{white-space:pre-wrap;overflow-wrap:anywhere;background:#f7fbfe;border:1px dashed #c5dbe9;border-radius:12px;padding:15px;min-height:155px;color:#315771}.tag{display:inline-block;padding:4px 9px;background:#fff3e4;color:#8c5512;border-radius:20px;font-size:11px;font-weight:800}.divider{height:1px;background:var(--line);margin:18px 0}.history{display:grid;gap:8px;max-height:280px;overflow:auto}.history-item{display:flex;gap:10px;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:9px}.history-item button{border:0;background:#e8f2f9;border-radius:8px;padding:7px 9px;color:#075079}.history-item strong{font-size:12px;display:block}.history-item small{color:var(--muted)}.hint{padding:11px;border-radius:10px;background:#eef8ff;color:#205876;font-size:12px}.footer{font-size:12px;color:var(--muted);text-align:center;margin:18px 0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sr{position:absolute;left:-9999px}#toast{position:fixed;bottom:20px;right:20px;background:#073955;color:white;padding:12px 16px;border-radius:11px;max-width:min(380px,90vw);box-shadow:0 9px 30px #001d3d33;z-index:100}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.wrap{padding:12px}.hero{padding:19px;align-items:start;flex-direction:column}.card{padding:15px}.row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero"><div><div class="eyebrow">MATHSPHERE · HSG12 PRO</div><h1>Không gian trợ lý AI Toán học</h1><p>Chuẩn bị yêu cầu · thiết kế sản phẩm · chuyển giao hồ sơ · kiểm soát phê duyệt</p></div><span class="status">Frontend V2 · Chưa kết nối AI</span></section>
+<div class="notice"><strong>Chưa có Backend hoặc Gemini.</strong> Trang này hỗ trợ soạn yêu cầu, lưu bản nháp trên thiết bị, xuất tệp và chuẩn bị hồ sơ chuyển giao. Không thực hiện nghiên cứu Internet, sinh đề hay kiểm định toán học bằng AI. Không nhập dữ liệu cá nhân, đề mật hoặc khóa API.</div>
+<div class="grid">
+<section class="card">
+<h2>01 · Cấu hình công việc</h2><p class="sub">Ba trợ lý chuyên môn dùng chung một quy trình, phân biệt rõ sản phẩm dự kiến.</p>
+<div class="field"><label for="assistant">Trợ lý chuyên môn</label><select id="assistant"><option value="research">Nghiên cứu Toán học toàn cầu</option><option value="matrix">Thiết kế ma trận và bản đặc tả</option><option value="exam">Ra đề và kiểm định toán học</option></select></div>
+<div class="field"><label for="taskTitle">Tên nhiệm vụ *</label><input id="taskTitle" maxlength="120" placeholder="Ví dụ: Xây dựng chuyên đề ứng dụng đạo hàm"></div>
+<div class="field"><label for="topic">Nội dung/chuyên đề *</label><select id="topic"><option value="">— Chọn nội dung —</option><option>Đạo hàm và ứng dụng</option><option>Hàm số mũ và lôgarit</option><option>Nguyên hàm – Tích phân (không thể tích tròn xoay)</option><option>Vectơ và tọa độ Oxyz (chưa có đường thẳng)</option><option>Xác suất – Thống kê</option><option>Mô hình hóa và bài toán thực tiễn</option><option>Tổng hợp HSG12 theo tiến độ dạy học</option></select></div>
+<div class="row2"><div class="field"><label for="level">Mức độ nhận thức</label><select id="level"><option>Nhận biết</option><option>Thông hiểu</option><option>Vận dụng</option><option selected>Vận dụng cao</option><option>VDC+ (phân nhóm trong Vận dụng cao)</option></select></div><div class="field"><label for="context">Bối cảnh</label><select id="context"><option>Toán thuần túy (TT)</option><option>Toán thực tiễn (TH)</option></select></div></div>
+<div class="field"><label for="competency">Năng lực trọng tâm</label><select id="competency"><option>Tư duy và lập luận toán học</option><option>Mô hình hóa toán học</option><option>Giải quyết vấn đề toán học</option></select></div>
+<div class="field"><label for="format">Hình thức câu hỏi</label><select id="format"><option>Trắc nghiệm 4 lựa chọn</option><option>Đúng/Sai – 4 mệnh đề độc lập (0,25/ý)</option><option>Đúng/Sai – 4 mệnh đề phân tầng (0; 0,1; 0,25; 0,5; 1)</option><option>Trả lời ngắn</option><option>Chưa xác định</option></select></div>
+<div class="field"><label for="count">Số lượng câu/bài dự kiến</label><input id="count" type="number" min="1" max="100" value="4"></div>
+<div class="hint" id="assistantInfo">Trợ lý nghiên cứu: yêu cầu nguồn dẫn, tác giả, năm, đường dẫn và kiểm tra tính phù hợp chương trình. Chưa thực hiện tìm kiếm trực tuyến.</div>
+<div class="chips"><span class="chip">4 mức nhận thức</span><span class="chip">2 bối cảnh</span><span class="chip">3 năng lực</span><span class="chip">6 vòng kiểm định</span></div>
+</section>
+<section class="card">
+<h2>02 · Soạn yêu cầu và hồ sơ</h2><p class="sub">Tạo bản hướng dẫn chuẩn để dùng ở giai đoạn Backend; giáo viên duyệt trước khi phát hành.</p>
+<div class="field"><label for="instructions">Yêu cầu bổ sung</label><textarea id="instructions" maxlength="6000" placeholder="Nêu yêu cầu, tài liệu nguồn, tiến độ dạy học, tiêu chí phân hóa và điều cần tránh…"></textarea><small>Không đưa khóa API hoặc dữ liệu nhạy cảm vào bản nháp.</small></div>
+<div class="buttons"><button class="btn" id="generate" type="button">Tạo phiếu yêu cầu</button><button class="btn alt" id="save" type="button">Lưu bản nháp</button><button class="btn alt" id="reset" type="button">Làm mới biểu mẫu</button></div>
+<div class="field"><label for="output">Phiếu yêu cầu được tạo (có thể chỉnh sửa)</label><textarea id="output" style="min-height:270px" placeholder="Bấm “Tạo phiếu yêu cầu” để soạn hồ sơ. Đây không phải câu trả lời của AI."></textarea></div>
+<div class="buttons"><button class="btn alt" id="copy" type="button">Sao chép phiếu</button><button class="btn alt" id="download" type="button">Xuất TXT</button><button class="btn orange" id="handoff" type="button">Chuẩn bị chuyển giao</button><button class="btn alt" id="exportJson" type="button">Xuất JSON hồ sơ</button></div>
+<div class="notice" id="handoffState" style="margin:12px 0">Trạng thái: <strong>Chưa lập hồ sơ chuyển giao.</strong> Chưa có kết quả AI, chưa có xác nhận kiểm định và chưa được phê duyệt.</div>
+<div class="divider"></div>
+<h2>03 · Bản nháp trên thiết bị</h2><p class="sub">Lưu tối đa 20 bản nháp cục bộ; không đồng bộ tài khoản. Có thể mất khi xóa dữ liệu trình duyệt.</p>
+<div class="history" id="history"><p class="helper">Chưa có bản nháp.</p></div>
+<div class="buttons"><button class="btn warn" id="clear" type="button">Xóa toàn bộ bản nháp</button></div>
+</section>
+</div>
+<div class="footer">MathSphere HSG12 PRO · Thiết kế bởi TS. Nguyễn Văn Thà · Giai đoạn Frontend V2</div>
+</main>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id),KEY='mathsphere_ai_v2_drafts',LIMIT=20;
+const titles={research:'Nghiên cứu Toán học toàn cầu',matrix:'Thiết kế ma trận và bản đặc tả',exam:'Ra đề và kiểm định toán học'};
+const info={research:'Trợ lý nghiên cứu: yêu cầu nguồn dẫn, tác giả, năm, đường dẫn và kiểm tra tính phù hợp chương trình. Chưa thực hiện tìm kiếm trực tuyến.',matrix:'Trợ lý thiết kế ma trận: kiểm tra tổng số câu, bốn mức nhận thức, hai bối cảnh, ba năng lực; giáo viên phải phê duyệt ma trận và bản đặc tả.',exam:'Trợ lý ra đề: chỉ nhận ma trận và đặc tả đã được giáo viên duyệt; mỗi câu phải qua A1–A3 (đề) và B1–B3 (lời giải). Chưa có máy kiểm định thực.'};
+function toast(t){const el=$('toast');el.textContent=t;el.hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.hidden=true,3200)}
+function getDrafts(){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(x=>x&&typeof x==='object').slice(0,LIMIT):[]}catch{return []}}
+function putDrafts(a){try{localStorage.setItem(KEY,JSON.stringify(a.slice(0,LIMIT)));return true}catch{toast('Trình duyệt không cho lưu dữ liệu. Hãy xuất TXT/JSON để giữ hồ sơ.');return false}}
+function getData(){return {assistant:$('assistant').value,title:$('taskTitle').value.trim(),topic:$('topic').value,level:$('level').value,context:$('context').value,competency:$('competency').value,format:$('format').value,count:Number($('count').value),instructions:$('instructions').value.trim(),output:$('output').value}}
+function valid(d){if(!d.title){toast('Cần nhập tên nhiệm vụ.');$('taskTitle').focus();return false}if(!d.topic){toast('Cần chọn chuyên đề.');$('topic').focus();return false}if(!Number.isInteger(d.count)||d.count<1||d.count>100){toast('Số lượng phải từ 1 đến 100.');$('count').focus();return false}return true}
+function template(d){const base=`PHIẾU YÊU CẦU – MATHSPHERE HSG12 PRO V2
+Trợ lý: ${titles[d.assistant]}
+Nhiệm vụ: ${d.title}
+Chuyên đề: ${d.topic}
+Mức độ: ${d.level}
+Bối cảnh: ${d.context}
+Năng lực trọng tâm: ${d.competency}
+Hình thức: ${d.format}
+Số lượng dự kiến: ${d.count}
+
+YÊU CẦU CHUNG
+- Bám sát nội dung giáo viên đã dạy; không đưa Đại số và bất đẳng thức nâng cao, thể tích khối tròn xoay, hoặc đường thẳng trong Oxyz.
+- Phân loại 4 mức: Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao; VDC+ chỉ là nhãn phụ trong VDC.
+- Ghi rõ năng lực Toán học thể hiện qua lời giải, không gắn nhãn hình thức.
+- Không công bố sản phẩm nếu chưa được giáo viên duyệt.
+`;
+let specific='';
+if(d.assistant==='research')specific=`\nYÊU CẦU NGHIÊN CỨU
+- Tìm kiếm nguồn Toán học có thể truy xuất, ghi tác giả, tên nguồn, năm, URL, ngôn ngữ và điều kiện sử dụng.
+- Phân biệt trích dẫn, chuyển thể và bài toán tự biên soạn.
+- Đối chiếu độ tin cậy và mức độ phù hợp với chương trình HSG12.
+- Không tự tạo nguồn hoặc đường dẫn không kiểm chứng.\n`;
+if(d.assistant==='matrix')specific=`\nYÊU CẦU MA TRẬN – ĐẶC TẢ
+- Lập bảng phân bổ đúng ${d.count} câu/bài theo nội dung, mức độ, bối cảnh, năng lực và hình thức.
+- Có bản đặc tả từng ô ma trận và kiểm tra tổng số câu.
+- Với Đúng/Sai, nêu rõ phương thức: độc lập 0,25/ý hoặc phân tầng 0; 0,1; 0,25; 0,5; 1 theo SỐ Ý ĐÚNG.
+- Chuyển sang Bạn ra đề chỉ khi giáo viên duyệt và khóa phiên bản.\n`;
+if(d.assistant==='exam')specific=`\nYÊU CẦU RA ĐỀ – KIỂM ĐỊNH
+- Chỉ dùng ma trận và đặc tả đã được giáo viên phê duyệt; nếu chưa có, yêu cầu bổ sung.
+- Mỗi câu có đề, đáp án, lời giải chi tiết và bằng chứng phân loại mức độ.
+- Ba vòng phản biện độc lập A1–A3 đối với đề, ba vòng B1–B3 đối với lời giải; lưu nhận xét và phiên bản.
+- Không tự ghi PASS cho bất kỳ vòng kiểm định nào; không công bố trước phê duyệt.
+- Đúng/Sai phân tầng: điểm theo số mệnh đề đúng (0→0; 1→0,1; 2→0,25; 3→0,5; 4→1), không theo vị trí a/b/c/d.\n`;
+return base+specific+`\nGHI CHÚ CỦA GIÁO VIÊN\n${d.instructions||'(Chưa bổ sung)'}\n\nTRẠNG THÁI: Bản yêu cầu do Frontend soạn; chưa gửi AI, chưa có kết quả, chưa được kiểm định hoặc phê duyệt.`}
+function render(){const root=$('history');root.replaceChildren();const a=getDrafts();if(!a.length){const p=document.createElement('p');p.className='helper';p.textContent='Chưa có bản nháp.';root.append(p);return}
+a.forEach((d,i)=>{const item=document.createElement('div');item.className='history-item';const txt=document.createElement('div'),strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=d.title||'Không tên';small.textContent=(titles[d.assistant]||'Trợ lý')+' · '+(d.savedAt||'');txt.append(strong,small);const b=document.createElement('button');b.type='button';b.textContent='Mở';b.addEventListener('click',()=>{for(const k of ['assistant','taskTitle','topic','level','context','competency','format','count','instructions','output']){const key=k==='taskTitle'?'title':k;if(d[key]!==undefined)$(k).value=d[key]}$('assistantInfo').textContent=info[$('assistant').value];toast('Đã mở bản nháp.');window.scrollTo({top:0,behavior:'smooth'})});item.append(txt,b);root.append(item)})}
+function save(){const d=getData();if(!valid(d))return;d.savedAt=new Date().toLocaleString('vi-VN');const a=getDrafts();a.unshift(d);if(putDrafts(a)){render();toast('Đã lưu bản nháp trên thiết bị.')}}
+function download(filename,text,type){const blob=new Blob([text],{type});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function slug(s){return (s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').replace(/[^a-zA-Z0-9]+/g,'-').slice(0,55)||'ho-so')}
+$('assistant').addEventListener('change',()=>{$('assistantInfo').textContent=info[$('assistant').value]});
+$('generate').addEventListener('click',()=>{const d=getData();if(!valid(d))return;$('output').value=template(d);$('handoffState').textContent='Trạng thái: Đã tạo phiếu yêu cầu; chưa gửi AI, chưa kiểm định, chưa phê duyệt.';toast('Đã tạo phiếu yêu cầu. Đây không phải kết quả AI.')});
+$('save').addEventListener('click',save);
+$('reset').addEventListener('click',()=>{if(!confirm('Làm mới biểu mẫu hiện tại? Các bản nháp đã lưu vẫn được giữ.'))return;for(const id of ['taskTitle','instructions','output'])$(id).value='';$('topic').value='';$('count').value='4';$('handoffState').textContent='Trạng thái: Chưa lập hồ sơ chuyển giao.';toast('Đã làm mới biểu mẫu.')});
+$('copy').addEventListener('click',async()=>{if(!$('output').value.trim()){toast('Chưa có phiếu để sao chép.');return}try{await navigator.clipboard.writeText($('output').value);toast('Đã sao chép phiếu.')}catch{$('output').focus();$('output').select();toast('Trình duyệt chặn sao chép. Hãy dùng Ctrl+C.') }});
+$('download').addEventListener('click',()=>{if(!$('output').value.trim()){toast('Chưa có phiếu để xuất.');return}download('MathSphere-'+slug($('taskTitle').value)+'.txt',$('output').value,'text/plain;charset=utf-8')});
+$('exportJson').addEventListener('click',()=>{const d=getData();if(!valid(d))return;download('MathSphere-'+slug(d.title)+'.json',JSON.stringify({schema:'mathsphere.ai.frontend.v2',status:'DRAFT_NOT_AI_VERIFIED',...d},null,2),'application/json;charset=utf-8')});
+$('handoff').addEventListener('click',()=>{const d=getData();if(!valid(d))return;if(!d.output.trim()){toast('Hãy tạo phiếu yêu cầu trước.');return}const note=d.assistant==='research'?'Hồ sơ sẵn sàng để chuyển sang module Nghiên cứu Toán học khi tích hợp.':d.assistant==='matrix'?'Hồ sơ sẵn sàng để chuyển sang Ma trận – Đặc tả khi tích hợp.':'Hồ sơ sẵn sàng để chuyển sang Bạn ra đề khi tích hợp.';$('handoffState').textContent='TRẠNG THÁI: '+note+' Chưa tự động chuyển dữ liệu; chưa có xác nhận AI, kiểm định hoặc phê duyệt.';toast('Đã chuẩn bị hồ sơ. Có thể xuất JSON để chuyển giao sau.')});
+$('clear').addEventListener('click',()=>{if(!confirm('Xóa toàn bộ bản nháp AI MathSphere đã lưu trên thiết bị này?'))return;if(putDrafts([])){render();toast('Đã xóa bản nháp.')}});
+render();
+})();
+</script>
+</body></html>
